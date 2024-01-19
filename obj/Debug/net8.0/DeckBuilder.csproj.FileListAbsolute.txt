@@ -1,0 +1,14 @@
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\bin\Debug\net8.0\DeckBuilder.exe
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\bin\Debug\net8.0\DeckBuilder.deps.json
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\bin\Debug\net8.0\DeckBuilder.runtimeconfig.json
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\bin\Debug\net8.0\DeckBuilder.dll
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\bin\Debug\net8.0\DeckBuilder.pdb
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.AssemblyInfoInputs.cache
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.AssemblyInfo.cs
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.csproj.CoreCompileInputs.cache
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.dll
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\refint\DeckBuilder.dll
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.pdb
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.genruntimeconfig.cache
+C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\ref\DeckBuilder.dll
