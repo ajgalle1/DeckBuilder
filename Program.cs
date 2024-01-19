@@ -82,15 +82,17 @@ namespace DeckBuilder
             {
                 case 1:
                     Console.WriteLine("You drafted a location!");
+                    return new Card_Location();
                     break;
                 case 2:
                     Console.WriteLine("You drafted a character!");
+                    return new Card_Character();
                     break;
                 default:
                     Console.WriteLine("You drafted an interrupt!");
+                    return new Card_Interrupt();
                     break;
             }
-            return new Card_Character();
 
         }
 

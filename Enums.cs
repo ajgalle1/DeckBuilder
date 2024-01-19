@@ -10,7 +10,7 @@ namespace DeckBuilder
     {
         public enum Alignment { dark = 1, light = 2 }
         
-        public enum Type {locations=1, characters, interrups, effects, ships }
+        public enum Type {locations=1, characters, interrupts }
     
     }
 }

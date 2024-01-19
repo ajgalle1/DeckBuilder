@@ -12,3 +12,4 @@ C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\refint\Deck
 C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.pdb
 C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\DeckBuilder.genruntimeconfig.cache
 C:\Users\Andre\source\repos\DeckBuilder\DeckBuilder\obj\Debug\net8.0\ref\DeckBuilder.dll
+C:\Users\Andre\source\repos\DeckBuilder\deckbuilder\obj\Debug\net8.0\DeckBuilder.sourcelink.json
