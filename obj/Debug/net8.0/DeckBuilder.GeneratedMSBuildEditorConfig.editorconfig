@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DeckBuilder
-build_property.ProjectDir = C:\Users\Andre\source\repos\DeckBuilder\DEckbuilder\
+build_property.ProjectDir = C:\Users\Andre\source\repos\DeckBuilder\deckbuilder\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

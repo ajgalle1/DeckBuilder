@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DEckbuilder\\DeckBuilder.csproj": {}
+    "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\deckbuilder\\DeckBuilder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DEckbuilder\\DeckBuilder.csproj": {
+    "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\deckbuilder\\DeckBuilder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DEckbuilder\\DeckBuilder.csproj",
+        "projectUniqueName": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\deckbuilder\\DeckBuilder.csproj",
         "projectName": "DeckBuilder",
-        "projectPath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DEckbuilder\\DeckBuilder.csproj",
+        "projectPath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\deckbuilder\\DeckBuilder.csproj",
         "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DEckbuilder\\obj\\",
+        "outputPath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\deckbuilder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
