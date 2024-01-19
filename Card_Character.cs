@@ -30,7 +30,7 @@ namespace DeckBuilder
             this.DestinyNumber = 2;
             this.Lore = "Imperial Leader. Has failed Vader for the next to last time. As clumsy as he is stupid.";
             this.Type = Enums.Type.characters;
-            this.GameText="If Vader on table and opponent plays an interrupt during this battle, place Admiral Ozzle out of play."
+            this.GameText = "If Vader on table and opponent plays an interrupt during this battle, place Admiral Ozzle out of play.";
         }
 
 

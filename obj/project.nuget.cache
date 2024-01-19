@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h5TJotWfABxC9NGmD9DZRxC8E5xX9kYIFpBb+Q8dz+IMjJU0RtIKDqYWrD0WhuYfhNXUkDZFeYkei9oaAKe44w==",
+  "dgSpecHash": "I3t79d0EhT/lJnpe3NM30izuqq4/sWpGr0Ye4/fsGlyFKUASI5sTQhdUpYPsRRJct2RasSq88UJuNVS3Ts1T3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DeckBuilder\\DeckBuilder.csproj",
+  "projectFilePath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\deckbuilder\\DeckBuilder.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

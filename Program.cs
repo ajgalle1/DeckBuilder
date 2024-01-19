@@ -17,16 +17,28 @@ namespace DeckBuilder
 
             //Get a valid integer so we know how many cards to draft.
             int cardsToDraft;
-            cardsToDraft = GetValidInt("How many cards would you like me to generate for you?", 0, Constants.MAX_DECK_SIZE);
-            
+            cardsToDraft = GetValidInt($"How many cards would you like me to generate for you? It must not exceed {Constants.MAX_DECK_SIZE}", 0, Constants.MAX_DECK_SIZE);
+
             //Create an array of cards as the starter deck
             Card[] Deck = new Card[Constants.MAX_DECK_SIZE];
-            for(int i = 0; i < cardsToDraft; i++)
+            for (int i = 0; i < cardsToDraft; i++)
             {
                 Deck[i] = AddRandomCard();
             }
-            
+
+            Console.WriteLine($"Drafting complete. However, you still" +
+                              $" need {(Constants.MAX_DECK_SIZE - cardsToDraft)} for a deck.");
+            for (int i = 0; i < Constants.MAX_DECK_SIZE - cardsToDraft; i++)
+            {
+                //add a new card after the set we initially drafted
+                Deck[i + cardsToDraft] = addCustomCard();
+            }
+
             Console.WriteLine("You wrote " + cardsToDraft);
+            foreach (Card card in Deck)
+            {
+                Console.WriteLine(card.Title);
+            }
 
         }
 
@@ -52,12 +64,12 @@ namespace DeckBuilder
         public static int GetValidInt(string question, int minVal, int maxVal)
         {
             //get a string from the user
-            string input = GetValidString(question);
             int num = -1;
 
             //check to make sure it is an integer. If not, ask again.
             while (num < minVal || num > maxVal)
             {
+                string input = GetValidString(question);
 
                 try
                 {
@@ -66,10 +78,9 @@ namespace DeckBuilder
                 catch
                 {
                     Console.WriteLine("Hmm... I didn't understand that. ");
-                    input = GetValidString(question);
                 }
             }
-            
+
             return num;
 
         }
@@ -96,6 +107,10 @@ namespace DeckBuilder
 
         }
 
+        public static Card addCustomCard()
+        {
+            return new Card_Character();
+        }
 
     }
 }

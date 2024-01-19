@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DeckBuilder
 {
-    public class Card
+    public abstract class Card
     {
         //All star wars cards are cards, but none are just cards. 
         //The must be either locations, characters, interrupts, effects, or ships. 
