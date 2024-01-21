@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +16,7 @@ namespace DeckBuilder
 
             while (string.IsNullOrWhiteSpace(response))
             {
+                Console.WriteLine(new string('*', 80));
                 Console.WriteLine(question);
                 response = Console.ReadLine();
             }; //as long as response is blank or just spaces, keep looping
@@ -49,8 +51,8 @@ namespace DeckBuilder
         }
         public static void IntroduceGame()
         {
+            Console.WriteLine(new string('*', 80));
             Console.WriteLine("Welcome to the Star Wars Customizable Card Game Deck Builder Console App for C#");
-            Console.WriteLine("At any time, type Q to Q.\n");
             Console.WriteLine($"RULES: A deck must have exactly {Constants.MAX_DECK_SIZE} cards.");
             Console.WriteLine("I can build the deck for you if you like, or you can add cards yourself until you reach 60 cards");
         }
@@ -76,7 +78,8 @@ namespace DeckBuilder
         public static Card[] FillRemainingDeckWithCustomCards(Card[] Deck)
         {
             int partialDeckSize=Deck.Count(s => s != null); //This checks to see how many blanks spaces are left to be filled in the array
-            Console.WriteLine(partialDeckSize);
+            //Console.WriteLine(partialDeckSize);
+
             int cardsRemaining = Constants.MAX_DECK_SIZE - partialDeckSize;
 
             for (int i = 0; i < cardsRemaining; i++)
@@ -88,7 +91,6 @@ namespace DeckBuilder
 
             return Deck;
         }
-
         public static void DisplayDeck(Card[] Deck)
         {
             int count = 1;
@@ -121,11 +123,44 @@ namespace DeckBuilder
             }
 
         }
-
         public static Card addCustomCard()
         {
+
+            string question="What sort of card would you like to create?" +
+                "\n 1. Location" +
+                "\n 2. Interrupt"+
+                "\n 3. Character";
+
+            string type = GetValidString(question);
+            
+            switch (type)
+            {
+                case "1":
+                    string title = GetValidString("Location Title?");
+                    string terrainEffect= GetValidString("Location Terrain Effect Text?");
+                    int destinyNumber = 0; //all locations have 0 for their destiny number so it isn't necessary to ask the user.
+                    Card_Location location = new Card_Location(title, terrainEffect, destinyNumber);
+                    return location;
+                    break;
+                case "2":
+                    Console.WriteLine("This feature is not implemented yet, but since you want an interrupt, I will add a Blast the Door Kid for you");
+                    return new Card_Interrupt();               
+                        break;
+                case "3":
+                    Console.WriteLine("This feature is not implemented yet, but since you want a character, I will add a Admiral Ozzle for you");
+                    return new Card_Interrupt();
+
+                    break;
+                default:
+                    Console.WriteLine("Sorry, I  didn't understand you, so I added an Admiral Ozzle to your deck.");
+                    return new Card_Character();
+                    break;
+            }
+
             return new Card_Character();
         }
+
+
     }
 
 }

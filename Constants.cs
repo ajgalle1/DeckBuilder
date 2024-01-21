@@ -9,5 +9,6 @@ namespace DeckBuilder
     internal class Constants
     {
         public const int MAX_DECK_SIZE = 60;
+        public const int MAX_HAND_SIZE = 8;
     }
 }
