@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DeckBuilder
+﻿namespace DeckBuilder
 {
-    internal class Card_Interrupt : Card
+    internal class Interrupt : Card
     {
         public string GameText { get; set; }
 
-        public Card_Interrupt()
+        public Interrupt()
         {
             //if nothing entered by the user, add a "blast the door, kid!"
 
@@ -21,5 +15,16 @@ namespace DeckBuilder
             this.Type = Enums.Type.characters;
         }
 
+
+        public override void DisplayCardInfo()
+        {
+            Console.WriteLine("".PadRight(80, '*'));
+            Console.WriteLine("Title: {0}", this.Title);
+            Console.WriteLine("Type: {0}", this.Type);
+            Console.WriteLine("Alignment: {0}", this.Alignment);
+            Console.WriteLine("Destiny Number: {0}", this.DestinyNumber);
+            Console.WriteLine("Game Text: {0}", this.GameText);
+            Console.WriteLine("".PadRight(80, '*'));
+        }
     }
 }
