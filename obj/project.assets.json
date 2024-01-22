@@ -8,25 +8,31 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Andre\\.nuget\\packages\\": {}
+    "C:\\Users\\danie\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DeckBuilder\\DeckBuilder.csproj",
+      "projectUniqueName": "D:\\Projects\\MSSA_Projects\\DeckBuilder\\DeckBuilder.csproj",
       "projectName": "DeckBuilder",
-      "projectPath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DeckBuilder\\DeckBuilder.csproj",
-      "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andre\\source\\repos\\DeckBuilder\\DeckBuilder\\obj\\",
+      "projectPath": "D:\\Projects\\MSSA_Projects\\DeckBuilder\\DeckBuilder.csproj",
+      "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\MSSA_Projects\\DeckBuilder\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\PROGRAM FILES\\DOTNET\\library-packs": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -61,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

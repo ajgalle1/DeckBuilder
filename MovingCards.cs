@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace DeckBuilder
+﻿namespace DeckBuilder
 {
     internal class MovingCards
     {
 
         //todo: shuffle deck into a stack.
-        public static Stack<Card> shuffleDeck(Stack<Card> deck)
+        // Minor naming convention issue: shuffleDeck should be ShuffleDeck
+        public static Stack<Card> ShuffleDeck(Stack<Card> deck)
         {
             //To randomize a stack, I need to put it into a list, then put it back into a stack.
-            Random rnd = new Random();
+            Random rnd = new();
+            List<Card> newDeck = [];
 
-            List<Card> newDeck = new List<Card>();
             while (deck.Count > 0)
             {
                 newDeck.Add(deck.Pop());
@@ -40,26 +33,51 @@ namespace DeckBuilder
             Console.WriteLine(topCard.DestinyNumber);
             Console.WriteLine(topCard.Type);
 
-            if(topCard.Type == Enums.Type.characters)
+            // if (topCard.Type == Enums.Type.characters)
+            // {
+            //     //Hmm... how can I access the fields of the card that are unique to the derived class?
+            // }
+
+            /**
+             * I've provided you with some additonal methods that may make displaying
+             * the card information easier. However, you can also use this method to 
+             * display the card information.
+             */
+
+            if (topCard is Character character_card)
             {
-               //Hmm... how can I access the fields of the card that are unique to the derived class?
+                Console.WriteLine(character_card.Power);
+                Console.WriteLine(character_card.DeployCost);
+                Console.WriteLine(character_card.IsWarrior);
+                Console.WriteLine(character_card.IsPilot);
+                Console.WriteLine(character_card.Lore);
+                Console.WriteLine(character_card.GameText);
             }
+            else if (topCard is Interrupt interrupt_card)
+            {
+                Console.WriteLine(interrupt_card.GameText);
+            }
+            else if (topCard is Location location_card)
+            {
+                Console.WriteLine(location_card.TerrainEffect);
+            }
+
             return topCard;
         }
 
         public static List<Card> DrawHand(Stack<Card> deck)
         {
             Console.Write("Your opening hand is: ");
-            List<Card> hand = new List<Card>();
+            List<Card> hand = [];
             Card currentCard;
 
-            for(int i = 0; i < Constants.MAX_HAND_SIZE; i++)
+            for (int i = 0; i < Constants.MAX_HAND_SIZE; i++)
             {
-                Console.Write(i+1 + ". ");
+                Console.Write(i + 1 + ". ");
                 currentCard = deck.Pop();
                 Console.Write(currentCard.Title + " ");
                 hand.Add(currentCard);
-                
+
             }
             return hand;
 

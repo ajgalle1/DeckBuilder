@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static DeckBuilder.Enums;
+﻿using static DeckBuilder.Enums;
 
 namespace DeckBuilder
 {
-    internal class Card_Location : Card
+    internal class Location : Card
     {
         public string TerrainEffect { get; set; }
-        public Card_Location()
+        public Location()
         {
             //if nothing entered by the user, add a "blast the door, kid!"
             this.TerrainEffect = "Spend 1 additional force to deploy here";
@@ -19,15 +14,26 @@ namespace DeckBuilder
             this.DestinyNumber = 0;
             this.Type = Enums.Type.locations;
         }
-         public Card_Location(string title, string terrainEffect, int destinyNumber)
+        public Location(string title, string terrainEffect, int destinyNumber)
         {
             //If the user has provided information, create a location card with this overload constructor
             this.TerrainEffect = terrainEffect;
-            this.Title= title;
+            this.Title = title;
             this.Alignment = Alignment.light;
             this.DestinyNumber = destinyNumber;
-            this.Type= Enums.Type.locations;
+            this.Type = Enums.Type.locations;
 
+        }
+
+        public override void DisplayCardInfo()
+        {
+            Console.WriteLine("".PadRight(80, '*'));
+            Console.WriteLine("Title: {0}", this.Title);
+            Console.WriteLine("Type: {0}", this.Type);
+            Console.WriteLine("Alignment: {0}", this.Alignment);
+            Console.WriteLine("Destiny Number: {0}", this.DestinyNumber);
+            Console.WriteLine("Terrain Effect: {0}", this.TerrainEffect);
+            Console.WriteLine("".PadRight(80, '*'));
         }
 
     }
